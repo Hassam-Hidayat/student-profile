@@ -1,9 +1,13 @@
+from datetime import datetime
+
 def create_profile(name, student_id, bio):
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open('student_profile.txt', 'w') as f:
-        f.write(f"Name:Hassam Hidayat {name}\n")
-        f.write(f"Student ID:22SE22 {student_id}\n")
-        f.write(f"Bio:Student {bio}\n")
-    print("Profile created successfully")
+        f.write(f"Name: {name}\n")
+        f.write(f"Student ID: {student_id}\n")
+        f.write(f"Bio: {bio}\n")
+        f.write(f"Generated: {timestamp}\n")
+    print("Profile updated successfully")
 
 if __name__ == "__main__":
-    create_profile("Hassam Hidayat", "22SE22", "I am a student learning software construction.")
+    create_profile("Your Name", "123456", "I am a student learning software construction.")

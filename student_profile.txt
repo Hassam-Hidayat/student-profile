@@ -1,3 +1,4 @@
-Name:Hassam Hidayat Hassam Hidayat
-Student ID:22SE22 22SE22
-Bio:Student I am a student learning software construction.
+Name: Your Name
+Student ID: 123456
+Bio: I am a student learning software construction.
+Generated: 2025-05-22 14:45:27
